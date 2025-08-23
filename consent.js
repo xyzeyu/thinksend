@@ -60,7 +60,4 @@
     } else {
       createBanner();
     }
-  } else if (window.tsConsentGranted() && typeof window.tsInitAnalytics === 'function') {
-    window.tsInitAnalytics();
-  }
-})();
+  } else if (window.tsConsentGranted() && typeof window.tsInitAnalytics === 'fun

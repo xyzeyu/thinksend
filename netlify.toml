@@ -7,8 +7,14 @@
   to = "/success.html"
   status = 200
 
-# Waitlist success
+# Waitlist success (Free)
 [[redirects]]
   from = "/waitlist-success"
   to = "/waitlist-success.html"
+  status = 200
+
+# Pro Waitlist success
+[[redirects]]
+  from = "/pro-waitlist-success"
+  to = "/pro-waitlist-success.html"
   status = 200
