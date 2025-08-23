@@ -103,7 +103,7 @@
     <!-- Newsletter -->
     <section id="newsletter" class="newsletter container">
       <h2>Get notified at launch</h2>
-      <form name="thinksend-updates" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+      <form name="thinksend-updates" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
         <input type="hidden" name="form-name" value="thinksend-updates" />
         <p class="hidden">
           <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -122,4 +122,25 @@
       <a href="/pro-waitlist.html">Pro Waitlist</a> • 
       <a href="/privacy">Privacy</a> • 
       <a href="/cookies">Cookies</a> • 
-      <a href="mailto:thinksendev@gmai
+      <a href="mailto:thinksendev@gmail.com">Contact</a>
+    </p>
+  </footer>
+
+  <!-- Hidden form templates (forces Netlify to detect forms) -->
+  <form name="thinksend-pro-waitlist" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="hidden" name="plan" value="pro" />
+  </form>
+
+  <form name="thinksend-updates" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="email" name="email" />
+  </form>
+
+  <script>
+    window.tsInitAnalytics = function () { /* add analytics loader here if needed */ };
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script src="consent.js" defer></script>
+</body>
+</html>

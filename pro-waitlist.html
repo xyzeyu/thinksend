@@ -15,9 +15,15 @@
       You must be logged in to the relevant accounts; messaging apps will prompt you to select a recipient first.
     </p>
 
-    <form name="thinksend-pro-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/pro-waitlist-success.html" style="margin-top:1rem;">
+    <form name="thinksend-pro-waitlist"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/pro-waitlist-success.html"
+          accept-charset="UTF-8"
+          enctype="application/x-www-form-urlencoded"
+          style="margin-top:1rem;">
       <input type="hidden" name="form-name" value="thinksend-pro-waitlist" />
-      <input type="hidden" name="plan" value="pro" />
       <p class="hidden">
         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
       </p>
@@ -30,6 +36,8 @@
         <input type="email" name="email" placeholder="you@example.com" required />
         <button class="btn" type="submit">Join Pro waitlist</button>
       </div>
+
+      <input type="hidden" name="plan" value="pro" />
 
       <p class="small muted" style="margin-top:.5rem;">
         We’ll only email you about ThinkSend Pro early access. Unsubscribe anytime.
