@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ThinkSend — Always-on notes you can send anywhere</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ThinkSend keeps a persistent note on your desktop and lets you send it to Google, YouTube, and save locally. Pro adds Calendar, WhatsApp, Email, and more." />
+  <link rel="icon" type="image/png" href="assets/logo-64.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container row">
+      <div class="brand">
+        <img src="assets/logo.png" class="logo" alt="ThinkSend logo" />
+        <span class="name">ThinkSend</span>
+      </div>
+      <nav class="nav">
+        <a href="/waitlist">Waitlist</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Always-on notes you can send anywhere</h1>
+      <p>Capture thoughts and launch them into action—Google searches, YouTube queries, or keep them saved. Simple, fast, and always ready.</p>
+      <div class="cta">
+        <a class="btn" href="/waitlist">Join the Waitlist</a>
+        <a class="btn outline" href="#newsletter">Get updates</a>
+      </div>
+      <img class="screenshot" src="assets/logo.png" alt="ThinkSend UI preview" />
+    </section>
+
+    <section id="features" class="features container">
+      <div class="grid">
+        <div class="card">
+          <h3>Persistent</h3>
+          <p>Your note auto-saves locally—close the window, it’s still there.</p>
+        </div>
+        <div class="card">
+          <h3>One-tap Send</h3>
+          <p>Fire your note straight to Google or YouTube in a click.</p>
+        </div>
+        <div class="card">
+          <h3>Tray Control</h3>
+          <p>Hide, show, or quit from the system tray. Lightweight and fast.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="download container">
+      <h2>Download</h2>
+      <p>Coming soon: Windows, macOS, and Linux installers.</p>
+      <div class="row">
+        <a class="btn disabled" aria-disabled="true">Windows (.exe)</a>
+        <a class="btn disabled" aria-disabled="true">macOS (.dmg)</a>
+        <a class="btn disabled" aria-disabled="true">Linux (.AppImage)</a>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter container">
+      <h2>Get notified at launch</h2>
+      <form name="thinksend-updates" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+        <input type="hidden" name="form-name" value="thinksend-updates" />
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+        <div class="row">
+          <input type="email" name="email" placeholder="you@example.com" required />
+          <button class="btn" type="submit">Notify me</button>
+        </div>
+        <p class="small muted">We’ll only email you about ThinkSend. Unsubscribe anytime.</p>
+      </form>
+      <p class="small" style="margin-top:.5rem;">
+        Prefer early access? <a href="/waitlist">Join the waitlist</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="y"></span> ThinkSend • 
+      <a href="/waitlist">Waitlist</a> • 
+      <a href="/privacy">Privacy</a> • 
+      <a href="/cookies">Cookies</a> • 
+      <a href="mailto:thinksendev@gmail.com">Contact</a>
+    </p>
+  </footer>
+
+  <script>
+    window.tsInitAnalytics = function () { /* add analytics loader if needed */ };
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script src="consent.js" defer></script>
+</body>
+</html>
