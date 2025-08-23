@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <title>ThinkSend — Always-on notes you can send anywhere</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ThinkSend keeps a persistent note on your desktop and lets you send it to Google, YouTube, and save locally. Pro adds email drafts, chat apps, PM tools, and calendar drafts." />
+  <meta name="description" content="ThinkSend keeps a persistent note on your desktop and lets you send it to Google, YouTube, and save locally. Pro adds calendar events, WhatsApp, email drafts, and more." />
   <link rel="icon" type="image/png" href="assets/logo-64.png">
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -16,7 +16,6 @@
         <span class="name">ThinkSend</span>
       </div>
       <nav class="nav">
-        <a href="/pro-waitlist.html">Pro Waitlist</a>
         <a href="#features">Features</a>
         <a href="#download">Download</a>
       </nav>
@@ -24,33 +23,39 @@
   </header>
 
   <main>
+    <!-- Hero -->
     <section class="hero container">
       <h1>Always-on notes you can send anywhere</h1>
       <p>Capture thoughts and launch them into action—Google searches, YouTube queries, saved notes, and more.</p>
       <div class="cta">
-        <a class="btn" href="/pro-waitlist.html">Join Pro Waitlist</a>
-        <a class="btn outline" href="#newsletter">Get updates</a>
+        <a class="btn" href="#download">Download Free</a>
       </div>
       <img class="screenshot" src="assets/logo.png" alt="ThinkSend UI preview" />
     </section>
 
+    <!-- Features -->
     <section id="features" class="features container">
       <div class="grid">
         <div class="card">
-          <h3>Persistent</h3>
-          <p>Your note auto-saves locally—close the window, it’s still there.</p>
+          <h3>Persistent Notepad</h3>
+          <p>Always on top when you need it, hidden when you don’t. Quick capture without context switching.</p>
         </div>
         <div class="card">
-          <h3>One-tap Send</h3>
-          <p>Free: Google & YouTube. Pro adds Email, Chat, PM tools, and Calendar drafts.</p>
+          <h3>Tab-like Notes</h3>
+          <p>Create, rename, and close tabs. The active tab is what gets sent to integrations.</p>
         </div>
         <div class="card">
-          <h3>Tray Control</h3>
-          <p>Hide, show, or quit from the system tray. Lightweight and fast.</p>
+          <h3>Send Anywhere</h3>
+          <p>Free: Google &amp; YouTube search, Save locally. Pro: Calendar events, WhatsApp, Email drafts and more.</p>
+        </div>
+        <div class="card">
+          <h3>Customizable Toolbar</h3>
+          <p>Choose which send buttons show on your toolbar. Keep the UI minimal and fast.</p>
         </div>
       </div>
     </section>
 
+    <!-- Comparison -->
     <section class="container">
       <h2>Compare plans</h2>
       <div class="table-wrap">
@@ -59,26 +64,23 @@
             <tr>
               <th class="col-plan">Feature</th>
               <th>Free</th>
-              <th>Pro <span class="badge">Waitlist</span></th>
+              <th>Pro</th>
             </tr>
           </thead>
           <tbody>
             <tr><td>Send to Google (search)</td><td class="check">✓</td><td class="check">✓</td></tr>
             <tr><td>Send to YouTube (search)</td><td class="check">✓</td><td class="check">✓</td></tr>
             <tr><td>Save locally (auto-save)</td><td class="check">✓</td><td class="check">✓</td></tr>
-            <tr><td>Create Email draft (in your email client)</td><td>—</td><td class="check">✓</td></tr>
-            <tr><td>Send message to Telegram / Messenger / WhatsApp <span class="badge">login required</span></td><td>—</td><td class="check">✓</td></tr>
-            <tr><td>Create draft in Trello / Asana <span class="badge">more to come</span></td><td>—</td><td class="check">✓</td></tr>
-            <tr><td>Create Calendar draft (Google Calendar or Calendly)</td><td>—</td><td class="check">✓</td></tr>
+            <tr><td>Create Email draft</td><td>—</td><td class="check">✓</td></tr>
+            <tr><td>Send via WhatsApp</td><td>—</td><td class="check">✓</td></tr>
+            <tr><td>Create Calendar events</td><td>—</td><td class="check">✓</td></tr>
           </tbody>
         </table>
       </div>
-      <p class="note">Pro features require you to be logged in to the relevant accounts. Messaging apps will prompt you to select a recipient first.</p>
-      <div style="margin-top:1rem;">
-        <a class="btn" href="/pro-waitlist.html">Join Pro Waitlist</a>
-      </div>
+      <p class="note">Pro features may require being logged in to relevant accounts; messaging may prompt you to select a recipient first.</p>
     </section>
 
+    <!-- Download -->
     <section id="download" class="download container">
       <h2>Download</h2>
       <p>Grab the latest ThinkSend Free build below.</p>
@@ -95,53 +97,17 @@
         <a href="mailto:thinksendev@gmail.com">thinksendev@gmail.com</a>.
       </p>
     </section>
-
-    <section id="newsletter" class="newsletter container">
-      <h2>Get notified at launch</h2>
-      <form name="thinksend-updates"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            action="/success.html"
-            accept-charset="UTF-8"
-            enctype="application/x-www-form-urlencoded">
-        <input type="hidden" name="form-name" value="thinksend-updates" />
-        <p class="hidden">
-          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-        </p>
-        <div class="row">
-          <input type="email" name="email" placeholder="you@example.com" required />
-          <button class="btn" type="submit">Notify me</button>
-        </div>
-        <p class="small muted">We’ll only email you about ThinkSend. Unsubscribe anytime.</p>
-      </form>
-    </section>
   </main>
 
   <footer class="footer container">
     <p>© <span id="y"></span> ThinkSend • 
-      <a href="/pro-waitlist.html">Pro Waitlist</a> • 
       <a href="/privacy">Privacy</a> • 
       <a href="/cookies">Cookies</a> • 
       <a href="mailto:thinksendev@gmail.com">Contact</a>
     </p>
   </footer>
 
-  <!-- HIDDEN TEMPLATES to force Netlify form detection -->
-  <form name="thinksend-pro-waitlist" data-netlify="true" netlify-honeypot="bot-field" hidden>
-    <input type="hidden" name="form-name" value="thinksend-pro-waitlist" />
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <input type="hidden" name="plan" value="pro" />
-  </form>
-
-  <form name="thinksend-updates" data-netlify="true" netlify-honeypot="bot-field" hidden>
-    <input type="hidden" name="form-name" value="thinksend-updates" />
-    <input type="email" name="email" />
-  </form>
-
   <script>
-    window.tsInitAnalytics = function () { /* add analytics loader here if needed */ };
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
   <script src="consent.js" defer></script>
