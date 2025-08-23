@@ -54,3 +54,24 @@ html,body { margin:0; background:var(--bg); color:var(--ink); font-family: ui-sa
 .cookie-text a { color: var(--ink); text-decoration: underline; }
 .cookie-actions { display: flex; gap: .5rem; }
 .cookie-actions .btn { padding: .6rem .9rem; border-radius: 10px; }
+
+/* Comparison table */
+.table-wrap { overflow-x: auto; margin: 2rem 0; }
+.compare {
+  width: 100%; border-collapse: collapse; background: var(--panel);
+  border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
+}
+.compare th, .compare td {
+  padding: .9rem 1rem; border-bottom: 1px solid var(--line); text-align: left;
+}
+.compare thead th {
+  font-size: 1rem; background: #141833;
+}
+.compare tbody tr:hover { background: rgba(255,255,255,.03); }
+.compare .col-plan { width: 42%; }
+.compare .check { font-weight: 800; }
+.badge {
+  display: inline-block; padding: .15rem .5rem; border: 1px solid var(--line);
+  border-radius: 999px; font-size: .75rem; color: var(--muted);
+}
+.note { color: var(--muted); font-size: .9rem; margin-top: .5rem; }
