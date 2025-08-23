@@ -24,7 +24,6 @@
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="hero container">
       <h1>Always-on notes you can send anywhere</h1>
       <p>Capture thoughts and launch them into action—Google searches, YouTube queries, saved notes, and more.</p>
@@ -35,7 +34,6 @@
       <img class="screenshot" src="assets/logo.png" alt="ThinkSend UI preview" />
     </section>
 
-    <!-- Features summary -->
     <section id="features" class="features container">
       <div class="grid">
         <div class="card">
@@ -53,7 +51,6 @@
       </div>
     </section>
 
-    <!-- Comparison -->
     <section class="container">
       <h2>Compare plans</h2>
       <div class="table-wrap">
@@ -82,7 +79,6 @@
       </div>
     </section>
 
-    <!-- Download -->
     <section id="download" class="download container">
       <h2>Download</h2>
       <p>Grab the latest ThinkSend Free build below.</p>
@@ -100,10 +96,15 @@
       </p>
     </section>
 
-    <!-- Newsletter -->
     <section id="newsletter" class="newsletter container">
       <h2>Get notified at launch</h2>
-      <form name="thinksend-updates" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+      <form name="thinksend-updates"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/success.html"
+            accept-charset="UTF-8"
+            enctype="application/x-www-form-urlencoded">
         <input type="hidden" name="form-name" value="thinksend-updates" />
         <p class="hidden">
           <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -126,14 +127,16 @@
     </p>
   </footer>
 
-  <!-- Hidden form templates (forces Netlify to detect forms) -->
+  <!-- HIDDEN TEMPLATES to force Netlify form detection -->
   <form name="thinksend-pro-waitlist" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="thinksend-pro-waitlist" />
     <input type="text" name="name" />
     <input type="email" name="email" />
     <input type="hidden" name="plan" value="pro" />
   </form>
 
   <form name="thinksend-updates" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="thinksend-updates" />
     <input type="email" name="email" />
   </form>
 
