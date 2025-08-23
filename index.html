@@ -16,7 +16,6 @@
         <span class="name">ThinkSend</span>
       </div>
       <nav class="nav">
-        <a href="/waitlist.html">Waitlist</a>
         <a href="/pro-waitlist.html">Pro Waitlist</a>
         <a href="#features">Features</a>
         <a href="#download">Download</a>
@@ -31,7 +30,7 @@
       <p>Capture thoughts and launch them into action—Google searches, YouTube queries, saved notes, and more.</p>
       <div class="cta">
         <a class="btn" href="/pro-waitlist.html">Join Pro Waitlist</a>
-        <a class="btn outline" href="#newsletter">Get updates (Free)</a>
+        <a class="btn outline" href="#newsletter">Get updates</a>
       </div>
       <img class="screenshot" src="assets/logo.png" alt="ThinkSend UI preview" />
     </section>
@@ -80,7 +79,6 @@
       <p class="note">Pro features require you to be logged in to the relevant accounts. Messaging apps will prompt you to select a recipient first.</p>
       <div style="margin-top:1rem;">
         <a class="btn" href="/pro-waitlist.html">Join Pro Waitlist</a>
-        <a class="btn outline" href="/waitlist.html" style="margin-left:.5rem;">Early Access (Free)</a>
       </div>
     </section>
 
@@ -102,7 +100,7 @@
       </p>
     </section>
 
-    <!-- Newsletter / Netlify Form -->
+    <!-- Newsletter -->
     <section id="newsletter" class="newsletter container">
       <h2>Get notified at launch</h2>
       <form name="thinksend-updates" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
@@ -116,26 +114,12 @@
         </div>
         <p class="small muted">We’ll only email you about ThinkSend. Unsubscribe anytime.</p>
       </form>
-      <p class="small" style="margin-top:.5rem;">
-        Prefer early access? <a href="/waitlist.html">Join the free waitlist</a> or try the <a href="/pro-waitlist.html">Pro waitlist</a>.
-      </p>
     </section>
   </main>
 
   <footer class="footer container">
     <p>© <span id="y"></span> ThinkSend • 
-      <a href="/waitlist.html">Waitlist</a> • 
       <a href="/pro-waitlist.html">Pro Waitlist</a> • 
       <a href="/privacy">Privacy</a> • 
       <a href="/cookies">Cookies</a> • 
-      <a href="mailto:thinksendev@gmail.com">Contact</a>
-    </p>
-  </footer>
-
-  <script>
-    window.tsInitAnalytics = function () { /* add analytics loader if needed */ };
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-  <script src="consent.js" defer></script>
-</body>
-</html>
+      <a href="mailto:thinksendev@gmai
