@@ -31,17 +31,12 @@ Serve installers directly from this site:
   </script>
   <script src="consent.js" defer></script>
 
+  ## 💾 Downloads
+We serve the Windows installer from GitHub Releases:
+
+- Windows: https://github.com/xyzeyu/thinksend/releases/download/v1.0.1/ThinkSend-Free-Setup-1.0.1.exe
+
+The homepage download button links to this URL.
+
+
   
----
-
-### Final steps
-1) Add your installer file to `site/downloads/` (e.g., `ThinkSend-Free-Setup.exe`).  
-2) Commit & push to GitHub.  
-3) Netlify auto-deploys (or drag-and-drop the `site/` folder).  
-4) Test:
-   - `/` comparison table + Pro waitlist button
-   - `/pro-waitlist` → submit → `/pro-waitlist-success`
-   - `/downloads/ThinkSend-Free-Setup.exe` → downloads the file directly
-
-If you want separate **per-OS** download buttons to auto-hide when a file isn’t present, I can add a tiny `<script>` to probe file URLs and disable buttons dynamically.
-
