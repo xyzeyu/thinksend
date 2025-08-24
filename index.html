@@ -4,9 +4,27 @@
   <meta charset="utf-8" />
   <title>ThinkSend — Always-on notes you can send anywhere</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ThinkSend keeps a persistent note on your desktop and lets you send it to Google, YouTube, and save locally. Pro adds calendar events, WhatsApp, email drafts, and more." />
+  <meta name="description" content="ThinkSend keeps a persistent note on your desktop and lets you send it to Google, YouTube, and save locally. Pro adds calendar events, WhatsApp, email drafts, Trello, Asana, and more." />
   <link rel="icon" type="image/png" href="assets/logo-64.png">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* center the single download button */
+    .download .row { display: flex; justify-content: center; }
+
+    /* Pro promo banner */
+    .promo { padding: 1rem 0 0; }
+    .promo-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 1.1rem;
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .promo-card p { margin: .4rem 0 1rem; }
+    .promo-card .subtle { color: var(--muted); font-size: .95rem; }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -46,7 +64,7 @@
         </div>
         <div class="card">
           <h3>Send Anywhere</h3>
-          <p>Free: Google &amp; YouTube search, Save locally. Pro: Calendar events, WhatsApp, Email drafts and more.</p>
+          <p>Free: Google &amp; YouTube search, Save locally. Pro: Calendar events, WhatsApp, Email drafts, Trello, Asana, and more.</p>
         </div>
         <div class="card">
           <h3>Customizable Toolbar</h3>
@@ -64,7 +82,7 @@
             <tr>
               <th class="col-plan">Feature</th>
               <th>Free</th>
-              <th>Pro</th>
+              <th>Pro (coming soon)</th>
             </tr>
           </thead>
           <tbody>
@@ -72,12 +90,23 @@
             <tr><td>Send to YouTube (search)</td><td class="check">✓</td><td class="check">✓</td></tr>
             <tr><td>Save locally (auto-save)</td><td class="check">✓</td><td class="check">✓</td></tr>
             <tr><td>Create Email draft</td><td>—</td><td class="check">✓</td></tr>
-            <tr><td>Send via WhatsApp</td><td>—</td><td class="check">✓</td></tr>
-            <tr><td>Create Calendar events</td><td>—</td><td class="check">✓</td></tr>
+            <tr><td>Send via WhatsApp / Messenger / Telegram</td><td>—</td><td class="check">✓</td></tr>
+            <tr><td>Create Calendar events (Google / Calendly)</td><td>—</td><td class="check">✓</td></tr>
+            <tr><td>Create tasks in Trello / Asana</td><td>—</td><td class="check">✓</td></tr>
+            <tr><td>More integrations to come…</td><td>—</td><td class="check">✓</td></tr>
           </tbody>
         </table>
       </div>
       <p class="note">Pro features may require being logged in to relevant accounts; messaging may prompt you to select a recipient first.</p>
+    </section>
+
+    <!-- Pro promo banner -->
+    <section class="promo container">
+      <div class="promo-card">
+        <strong>ThinkSend Pro (coming soon)</strong>
+        <p class="subtle">Unlock email drafts, chat apps (WhatsApp/Messenger/Telegram), Trello/Asana tasks, and calendar events.</p>
+        <a class="btn disabled" aria-disabled="true" title="Coming soon">Upgrade to Pro</a>
+      </div>
     </section>
 
     <!-- Download -->
@@ -88,13 +117,10 @@
         <a class="btn"
            href="https://github.com/xyzeyu/thinksend/releases/download/v1.0.1/ThinkSend-Free-Setup-1.0.1.exe"
            rel="noopener"
-        >Windows (.exe)</a>
-        <a class="btn disabled" aria-disabled="true" title="Coming soon">macOS (.dmg)</a>
-        <a class="btn disabled" aria-disabled="true" title="Coming soon">Linux (.AppImage)</a>
+        >Download for Windows (.exe)</a>
       </div>
       <p class="small muted" style="margin-top:.5rem;">
-        Having trouble? Email us at
-        <a href="mailto:thinksendev@gmail.com">thinksendev@gmail.com</a>.
+        Having trouble? <a href="mailto:thinksendev@gmail.com">Contact us</a>.
       </p>
     </section>
   </main>
