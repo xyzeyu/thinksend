@@ -4,40 +4,53 @@
   <meta charset="utf-8" />
   <title>Privacy Policy — ThinkSend</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="assets/logo-64.png">
+  <meta name="description" content="ThinkSend Privacy Policy: Learn how we handle your data, notes, and information when using ThinkSend Free and Pro. We respect your privacy." />
+  <link rel="canonical" href="https://thinksend.netlify.app/privacy" />
+  <link rel="icon" type="image/png" href="assets/logo-64.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://thinksend.netlify.app/privacy" />
+  <meta property="og:title" content="Privacy Policy — ThinkSend" />
+  <meta property="og:description" content="Read the ThinkSend Privacy Policy. We respect your privacy and explain how we handle data, notes, and usage." />
+  <meta property="og:image" content="https://thinksend.netlify.app/assets/logo.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Privacy Policy — ThinkSend" />
+  <meta name="twitter:description" content="ThinkSend Privacy Policy: How we handle your data, notes, and information." />
+  <meta name="twitter:image" content="https://thinksend.netlify.app/assets/logo.png" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="container">
+  <main class="container" style="padding:2rem 1rem;">
     <h1>Privacy Policy</h1>
-    <p>Last updated: <span id="date"></span></p>
+    <p><em>Last updated: August 2025</em></p>
 
-    <p>ThinkSend values your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights.</p>
+    <p>ThinkSend is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our app and website.</p>
 
-    <h2>1. Information We Collect</h2>
-    <ul>
-      <li><strong>Form Submissions:</strong> When you subscribe or join the waitlist, we collect your email (and optional name) to contact you about ThinkSend.</li>
-      <li><strong>Usage Data:</strong> We may collect non-identifiable data like browser type, referring pages, and general usage patterns.</li>
-    </ul>
+    <h2>1. Local Data</h2>
+    <p>Your notes are stored locally on your device. We do not upload or transmit your notes to our servers.</p>
 
-    <h2>2. How We Use Information</h2>
-    <p>Your email address will only be used to send updates, early access information, or release announcements about ThinkSend. We do not sell or share your information with third parties.</p>
+    <h2>2. Analytics</h2>
+    <p>We may use privacy-friendly analytics (with your consent) to understand how our website is used. You can decline analytics cookies at any time.</p>
 
-    <h2>3. Cookies</h2>
-    <p>Our landing page may use cookies for basic functionality and optional analytics. See our <a href="/cookies">Cookies Policy</a> for details.</p>
+    <h2>3. Pro Features</h2>
+    <p>Pro features that integrate with external apps (like Google, WhatsApp, or Trello) will open those apps in your browser. ThinkSend does not store or collect your login credentials.</p>
 
-    <h2>4. Your Rights</h2>
-    <p>You may unsubscribe at any time by following the link in our emails or by contacting us directly.</p>
+    <h2>4. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, email us at 
+      <a href="mailto:thinksendev@gmail.com">thinksendev@gmail.com</a>.
+    </p>
 
-    <h2>5. Contact</h2>
-    <p>Email us at <a href="mailto:thinksendev@gmail.com">thinksendev@gmail.com</a>.</p>
-
-    <p><a href="/">← Back to Home</a></p>
+    <p><a href="/">← Back to home</a></p>
   </main>
 
-  <script>
-    document.getElementById('date').textContent = new Date().toLocaleDateString();
-  </script>
-  <script src="consent.js" defer></script>
+  <footer class="footer container">
+    <p>© <span id="y"></span> ThinkSend</p>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
