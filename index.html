@@ -1,12 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Primary -->
   <meta charset="utf-8" />
-  <title>ThinkSend — Always-on notes you can send anywhere</title>
+  <title>ThinkSend — Always-on Notes App for Windows (Send to Google, YouTube, Email, WhatsApp, Calendar)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ThinkSend keeps a persistent note on your desktop and lets you send it to Google, YouTube, and save locally. Pro adds calendar events, WhatsApp, email drafts, Trello, Asana, and more." />
-  <link rel="icon" type="image/png" href="assets/logo-64.png">
+  <meta name="description" content="ThinkSend is an always-on notepad for Windows. Capture instantly and send to Google, YouTube, save locally. Pro (coming soon): Email drafts, WhatsApp, Messenger, Telegram, Calendar, Trello, Asana." />
+  <link rel="canonical" href="https://thinksend.netlify.app/" />
+  <meta name="theme-color" content="#0f1222" />
+
+  <!-- Preload main CSS for faster paint -->
+  <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="assets/logo-64.png" />
+  <link rel="apple-touch-icon" href="assets/logo-64.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thinksend.netlify.app/" />
+  <meta property="og:title" content="ThinkSend — Always-on Notes App for Windows" />
+  <meta property="og:description" content="Capture notes instantly and send them anywhere: Google, YouTube, Email, WhatsApp, Calendar, Trello, Asana." />
+  <meta property="og:image" content="https://thinksend.netlify.app/assets/logo.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://thinksend.netlify.app/" />
+  <meta name="twitter:title" content="ThinkSend — Always-on Notes App for Windows" />
+  <meta name="twitter:description" content="Always-on notepad. Send notes to Google, YouTube, Email, WhatsApp, Calendar, Trello, Asana." />
+  <meta name="twitter:image" content="https://thinksend.netlify.app/assets/logo.png" />
+
+  <!-- (Optional) Keywords -->
+  <meta name="keywords" content="ThinkSend, notes app, always-on notepad, Windows notes, send to Google, YouTube search, WhatsApp notes, email drafts, calendar notes, Trello, Asana, productivity app" />
+
   <style>
     /* center the single download button */
     .download .row { display: flex; justify-content: center; }
@@ -25,6 +52,37 @@
     .promo-card p { margin: .4rem 0 1rem; }
     .promo-card .subtle { color: var(--muted); font-size: .95rem; }
   </style>
+
+  <!-- Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "ThinkSend",
+        "url": "https://thinksend.netlify.app/",
+        "logo": "https://thinksend.netlify.app/assets/logo.png",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "thinksendev@gmail.com"
+        }]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "ThinkSend",
+        "operatingSystem": "Windows",
+        "applicationCategory": "ProductivityApplication",
+        "description": "Always-on notes app for Windows. Send notes to Google, YouTube, and save locally. Pro (coming soon): Email drafts, WhatsApp, Messenger, Telegram, Calendar, Trello, Asana.",
+        "url": "https://thinksend.netlify.app/",
+        "image": "https://thinksend.netlify.app/assets/logo.png",
+        "author": { "@type": "Organization", "name": "ThinkSend" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -33,7 +91,7 @@
         <img src="assets/logo.png" class="logo" alt="ThinkSend logo" />
         <span class="name">ThinkSend</span>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="#features">Features</a>
         <a href="#download">Download</a>
       </nav>
@@ -43,16 +101,17 @@
   <main>
     <!-- Hero -->
     <section class="hero container">
-      <h1>Always-on notes you can send anywhere</h1>
-      <p>Capture thoughts and launch them into action—Google searches, YouTube queries, saved notes, and more.</p>
+      <h1>ThinkSend — Always-on Notes App for Windows</h1>
+      <p>Capture notes instantly and send them anywhere—Google, YouTube, saved locally, and more.</p>
       <div class="cta">
         <a class="btn" href="#download">Download Free</a>
       </div>
-      <img class="screenshot" src="assets/logo.png" alt="ThinkSend UI preview" />
+      <img class="screenshot" src="assets/logo.png" alt="ThinkSend UI preview mark" />
     </section>
 
     <!-- Features -->
     <section id="features" class="features container">
+      <h2 class="sr-only" style="position:absolute;left:-9999px">Features</h2>
       <div class="grid">
         <div class="card">
           <h3>Persistent Notepad</h3>
@@ -74,15 +133,15 @@
     </section>
 
     <!-- Comparison -->
-    <section class="container">
-      <h2>Compare plans</h2>
+    <section class="container" aria-labelledby="compare-heading">
+      <h2 id="compare-heading">Compare plans</h2>
       <div class="table-wrap">
         <table class="compare">
           <thead>
             <tr>
-              <th class="col-plan">Feature</th>
-              <th>Free</th>
-              <th>Pro (coming soon)</th>
+              <th class="col-plan" scope="col">Feature</th>
+              <th scope="col">Free</th>
+              <th scope="col">Pro (coming soon)</th>
             </tr>
           </thead>
           <tbody>
@@ -101,17 +160,17 @@
     </section>
 
     <!-- Pro promo banner -->
-    <section class="promo container">
+    <section class="promo container" aria-labelledby="pro-banner">
       <div class="promo-card">
-        <strong>ThinkSend Pro (coming soon)</strong>
+        <strong id="pro-banner">ThinkSend Pro (coming soon)</strong>
         <p class="subtle">Unlock email drafts, chat apps (WhatsApp/Messenger/Telegram), Trello/Asana tasks, and calendar events.</p>
         <a class="btn disabled" aria-disabled="true" title="Coming soon">Upgrade to Pro</a>
       </div>
     </section>
 
     <!-- Download -->
-    <section id="download" class="download container">
-      <h2>Download</h2>
+    <section id="download" class="download container" aria-labelledby="download-heading">
+      <h2 id="download-heading">Download</h2>
       <p>Grab the latest ThinkSend Free build below.</p>
       <div class="row">
         <a class="btn"
